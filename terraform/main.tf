@@ -1,1 +1,12 @@
-# Terraform configuration for my resume website
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+    }
+  }
+}
+
+provider "aws" {
+  region = "eu-west-1"
+}
+
