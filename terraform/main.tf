@@ -13,3 +13,16 @@ provider "aws" {
 resource "aws_s3_bucket" "resume_website" {
   bucket = "tosin-resume"
 }
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 6.0"
+    }
+  }
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
